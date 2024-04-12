@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvsicl6eiqjry"]
+
+[ext_resource type="Script" path="res://UI.gd" id="1_so7wf"]
+[ext_resource type="Texture2D" uid="uid://cxfy2sic5qrji" path="res://beige.png" id="2_1q4n7"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_so7wf")
+
+[node name="StaminaBar" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.208
+anchor_top = 0.901
+anchor_right = 0.792
+anchor_bottom = 0.938
+offset_left = 8.384
+offset_top = 8.15198
+offset_right = -8.38403
+offset_bottom = -7.82404
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 50.0
+step = 0.1
+value = 50.0
+fill_mode = 6
+nine_patch_stretch = true
+texture_progress = ExtResource("2_1q4n7")
+tint_progress = Color(1, 1, 1, 0.0784314)

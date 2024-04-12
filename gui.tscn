@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://8qq7fp7mw3w5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jio8m"]
+orientation = 2
+
+[node name="GUI" type="Node2D"]
+
+[node name="Energy" type="Node2D" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Energy"]
+offset_left = 577.454
+offset_top = 584.0
+offset_right = 617.454
+offset_bottom = 624.0
+max_value = 50.0
+fill_mode = 6
+
+[node name="CurrentEnergy" type="MeshInstance2D" parent="Energy/TextureProgressBar"]
+scale = Vector2(300, 6)
+mesh = SubResource("PlaneMesh_jio8m")
